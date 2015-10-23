@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[1]:
+# In[1]: newestnewset
 
 import pandas as pd
 import numpy as np
@@ -22,10 +22,7 @@ rule = pd.DataFrame(rule.values,index=index0,columns=columns0)
 
 # In[2]:
 
-rule.ix["Pair8"]["10"]="P" #これはスプリットのがよさそう
-rule.ix["Pair8"]["1"]="P"  ##これはスプリットのがよさそう
-rule.ix["Hard11"]["10"]="Dh" #or "Dh" どっちでもいいっぽい
-rule.ix["PairA"]["1"] = "P" #must sPrit !!!
+rule.ix["Pair8"]["10"]="P" #これはスプリチE��のがよさそぁErule.ix["Pair8"]["1"]="P"  ##これはスプリチE��のがよさそぁErule.ix["Hard11"]["10"]="Dh" #or "Dh" どっちでもいぁE��ぽぁErule.ix["PairA"]["1"] = "P" #must sPrit !!!
 
 #rule
 
@@ -47,8 +44,7 @@ deck=makedeck()
 ##draw the card
 def draw(deck1):
     global deck # deck is global
-    drawcard_number = np.random.randint(len(deck1)) #  0〜len(deck)-1 の整数を1個生成
-    drawcard = deck[drawcard_number]
+    drawcard_number = np.random.randint(len(deck1)) #  0〜len(deck)-1 の整数めE個生戁E    drawcard = deck[drawcard_number]
     deck = np.delete(deck1, drawcard_number)
     return drawcard
 
